@@ -72,7 +72,7 @@ For me, IDPROM programming was not just a technical task. It was a learning oppo
     title:
       "Lessons from YANG Suite Testing and SD-WAN Bug Fixing",
     date: "June 2026",
-    readTime: "3 min",
+    readTime: "4 min",
     tag: "Networking",
     excerpt:
       "My experience learning model-driven networking, validation workflows and structured debugging.",
@@ -114,19 +114,13 @@ For me, YANG suite testing and SD-WAN bug fixing was not just another task. It w
       "My framework for understanding Dynamic Programming instead of memorizing solutions.",
 
     content: `
-When I started Dynamic Programming, my biggest challenge wasn't writing code—it was figuring out the DP state.
+When I first started learning Dynamic Programming, my biggest challenge wasn't writing the code—it was identifying the correct DP state. I often found myself memorizing solutions without truly understanding why a particular state representation was chosen.
 
-I used to memorize solutions without understanding why a particular state was chosen.
+Over time, I discovered a simple question that helped me approach DP problems more systematically: "What information from the past affects future decisions?" The answer to that question usually reveals the state.
 
-Eventually I learned the key question:
+For example, if future decisions depend only on the previous element, then the state only needs to track that element. If they depend on the previous two elements, then the state should contain those two values. This way of thinking helped me stop memorizing patterns and start understanding the reasoning behind them.
 
-"What information from the past affects future decisions?"
-
-If future decisions only depend on the last element, the state only needs the last element.
-
-If they depend on the last two elements, the state only needs those two.
-
-This mindset completely changed how I approach DP.
+Today, whenever I encounter a new DP problem, I begin by identifying the minimum information required to make future decisions. That mindset has completely changed how I approach Dynamic Programming.
 `
   },
 
@@ -142,17 +136,13 @@ This mindset completely changed how I approach DP.
       "My learning path from Embedded Networking into Software Development.",
 
     content: `
-My current role focuses on Cisco Industrial IoT Routing.
+My current role focuses on Cisco Industrial IoT Routing, where I work with networking concepts, protocols, and industrial connectivity solutions. While this has given me a strong technical foundation, my long-term goal is to transition into Software Engineering.
 
-To move toward Software Engineering I am focusing on:
+To make that shift, I created a learning roadmap centered around four key areas: Java, Spring Boot, Data Structures and Algorithms (DSA), and System Design. Java and Spring Boot help me build backend applications, DSA strengthens my problem-solving skills, and System Design prepares me for building scalable software systems.
 
-Java
-Spring Boot
-DSA
-System Design
-Cloud
+Rather than viewing my networking background and software goals as separate paths, I see them as complementary skills. My experience in Industrial IoT gives me a unique perspective on distributed systems and networking, while software engineering expands my ability to build complete solutions.
 
-This roadmap helps me bridge both domains.
+This roadmap provides a structured way to bridge both domains and move steadily toward a software engineering career.
 `
   }
 ];

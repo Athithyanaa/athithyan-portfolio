@@ -78,7 +78,7 @@ export default function App() {
     tech: "Python • Streamlit • ML",
     description:
       "Machine learning powered log analysis dashboard with graph visualization, anomaly detection and interactive monitoring.",
-    github: "https://github.com/athi0058/HPE-Log-Analyzer",
+    github: "https://github.com/Athithyanaa/hpe-log-analyzer",
   },
 
   {
