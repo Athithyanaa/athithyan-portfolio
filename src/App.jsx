@@ -32,7 +32,7 @@ import ciscoImg from "./assets/projects/cisco.png";
 export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  
+
   const projects = [
     {
   title: "Cisco Industrial IoT Routing",
@@ -125,10 +125,33 @@ export default function App() {
 
 {menuOpen && (
   <div className="mobile-menu">
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="/blog">Blog</a>
-    <a href="#contact">Contact</a>
+    <a
+      href="#projects"
+      onClick={() => setMenuOpen(false)}
+    >
+      Projects
+    </a>
+
+    <a
+      href="#experience"
+      onClick={() => setMenuOpen(false)}
+    >
+      Experience
+    </a>
+
+    <a
+      href="/blog"
+      onClick={() => setMenuOpen(false)}
+    >
+      Blog
+    </a>
+
+    <a
+      href="#contact"
+      onClick={() => setMenuOpen(false)}
+    >
+      Contact
+    </a>
   </div>
 )}
 
