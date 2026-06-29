@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 
 import { TypeAnimation } from "react-type-animation";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 
@@ -30,7 +31,8 @@ import ciscoImg from "./assets/projects/cisco.png";
 
 export default function App() {
   const [selectedProject, setSelectedProject] = useState(null);
-
+  const [menuOpen, setMenuOpen] = useState(false);
+  
   const projects = [
     {
   title: "Cisco Industrial IoT Routing",
@@ -103,16 +105,32 @@ export default function App() {
       <ParticleBackground />
       <Spotlight />
 
-      <nav className="navbar">
-        <div className="logo">Athithyan.dev</div>
+     <nav className="navbar">
+  <div className="logo">Athithyan.dev</div>
 
-        <div className="nav-links">
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-           <a href="/blog">Blog</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
+  <div className="nav-links desktop-nav">
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="/blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <button
+    className="menu-btn"
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    {menuOpen ? <FaTimes /> : <FaBars />}
+  </button>
+</nav>
+
+{menuOpen && (
+  <div className="mobile-menu">
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="/blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </div>
+)}
 
       <section className="hero">
         <div className="grid-bg"></div>
