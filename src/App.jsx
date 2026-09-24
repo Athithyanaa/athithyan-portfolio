@@ -209,7 +209,7 @@ export default function App() {
   <FaGithub />
 </a>
 
-            <a href="https://www.linkedin.com/in/a%E1%B4%9B%CA%9C%C9%AAt%CA%9C%CA%8F%E1%B4%80%C9%B4-r-b07288254/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/athithyan-r-b07288254/?isSelfProfile=true" target="_blank" rel="noreferrer">
   <FaLinkedin />
 </a>
 
